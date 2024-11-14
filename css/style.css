@@ -456,5 +456,10 @@ a {
     transform: translateX(-100%);
   }
 }
+@media (max-width: 768px) {
+  .text-carousel {
+    padding: 48px 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
