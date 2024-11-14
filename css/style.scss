@@ -191,4 +191,38 @@ a {
     cursor: pointer;
   }
 }
+
+@media (max-width: 1440px) {
+  .hero-banner {
+    height: 960px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 800px;
+
+    &__text {
+      gap: 12px;
+
+      & h1 {
+        font-size: 5.6rem;
+        line-height: 76.8px;
+      }
+
+      & div {
+        height: 40px;
+        padding-top: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-banner {
+    height: 600px;
+  }
+}
+
 // End Hero Banner
