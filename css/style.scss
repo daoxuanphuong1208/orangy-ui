@@ -105,4 +105,35 @@ a {
     text-transform: uppercase;
   }
 }
+
+@media (max-width: 768px) {
+  .header__top {
+    .splide__slide {
+      justify-content: center;
+    }
+
+    .splide__arrow {
+      color: #fff;
+      background-color: transparent !important;
+    }
+    .splide__arrow--prev {
+      left: -10px;
+    }
+    .splide__arrow--next {
+      right: -10px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .header__top {
+    .splide__arrow--prev {
+      left: -20px;
+    }
+    .splide__arrow--next {
+      right: -20px;
+    }
+  }
+}
+
 // End Header
