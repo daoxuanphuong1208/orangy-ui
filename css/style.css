@@ -109,5 +109,53 @@ a {
     right: -20px;
   }
 }
+.hero-banner {
+  height: 1080px;
+  background-image: url("../images/hero_banner_background.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-banner__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 352px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-banner__text h1 {
+  font-size: 7.2rem;
+  line-height: 90px;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+}
+.hero-banner__text p {
+  font-size: 1.8rem;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+}
+.hero-banner__text div {
+  height: 36px;
+  padding-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+.hero-banner__text button {
+  font-size: 1.6rem;
+  line-height: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=style.css.map */
