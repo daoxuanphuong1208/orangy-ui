@@ -23,13 +23,15 @@ document.addEventListener("DOMContentLoaded", function () {
     breakpoints: {
       1440: {
         perPage: 3,
+        padding: { left: "15px" },
+      },
+
+      1024: {
+        perPage: 2.5,
       },
       768: {
         type: "loop",
         perPage: 1.5,
-        arrows: true,
-        interval: 3000,
-        autoplay: true,
       },
     },
   }).mount();
