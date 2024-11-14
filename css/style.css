@@ -754,6 +754,7 @@ a {
 }
 .single-banner {
   position: relative;
+  margin-top: 100px;
   height: 350px;
 }
 .single-banner img {
@@ -763,9 +764,9 @@ a {
 
 .single-banner__text {
   position: absolute;
-  top: 50%;
+  top: 121px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 }
 .single-banner__text h1 {
   font-size: 5.6rem;
@@ -775,11 +776,29 @@ a {
   color: #fff;
 }
 .single-banner__text p {
+  margin-top: 24px;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 24px;
   text-align: center;
   color: #fff;
+}
+
+@media (max-width: 480px) {
+  .single-banner {
+    height: 600px;
+    margin-top: 60px;
+  }
+  .single-banner__text {
+    top: 230px;
+  }
+  .single-banner__text h1 {
+    font-size: 4.8rem;
+    line-height: 64px;
+  }
+  .single-banner__text p {
+    margin-top: 12px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
