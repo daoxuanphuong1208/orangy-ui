@@ -14,4 +14,25 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   }).mount();
+
+  new Splide("#product-slider", {
+    perPage: 4,
+    autoplay: false,
+    arrows: false,
+    pagination: false,
+    breakpoints: {
+      1440: {
+        perPage: 3,
+        padding: { left: "15px" },
+      },
+
+      1024: {
+        perPage: 2.5,
+      },
+      768: {
+        type: "loop",
+        perPage: 1.5,
+      },
+    },
+  }).mount();
 });
