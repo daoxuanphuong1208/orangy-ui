@@ -62,3 +62,78 @@ a {
   width: 100%;
   margin: 0 auto;
 }
+
+// Begin Header
+.header {
+  height: 78px;
+}
+
+.header__top {
+  height: 34px;
+  padding: 5px 20px;
+  background-color: $background-black;
+
+  & .splide__slide {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: $background-black;
+  }
+
+  & .splide__slide:nth-child(2) {
+    justify-content: right;
+  }
+
+  & .splide__slide span {
+    font-size: 1.4rem;
+    color: $text-white;
+  }
+}
+
+.header__bottom {
+  height: calc(100% - 34px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $background-white;
+
+  & h2 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: $text-black;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__top {
+    .splide__slide {
+      justify-content: center;
+    }
+
+    .splide__arrow {
+      color: #fff;
+      background-color: transparent !important;
+    }
+    .splide__arrow--prev {
+      left: -10px;
+    }
+    .splide__arrow--next {
+      right: -10px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .header__top {
+    .splide__arrow--prev {
+      left: -20px;
+    }
+    .splide__arrow--next {
+      right: -20px;
+    }
+  }
+}
+
+// End Header
