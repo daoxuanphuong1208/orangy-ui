@@ -126,8 +126,8 @@ a {
   width: 352px;
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 408px;
+  transform: translateX(-50%);
 }
 .hero-banner__text h1 {
   font-size: 7.2rem;
@@ -137,6 +137,7 @@ a {
   font-weight: 400;
 }
 .hero-banner__text p {
+  width: 290px;
   font-size: 1.8rem;
   line-height: 30px;
   text-align: center;
@@ -153,7 +154,7 @@ a {
 .hero-banner__text button {
   font-size: 1.6rem;
   line-height: 24px;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: uppercase;
   color: #fff;
   cursor: pointer;
