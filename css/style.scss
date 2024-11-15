@@ -1015,3 +1015,180 @@ a {
 }
 
 // End Our Service
+
+// Begin Contact Shop
+.contact-shop {
+  height: 752px;
+  background-color: #f6f2ee;
+}
+
+.contact-shop__list {
+  display: flex;
+}
+
+.contact-shop__list-item {
+  position: relative;
+}
+
+.contact-shop__list-item:nth-child(2) {
+  @include flex-center-both();
+  width: 564px;
+  height: 752px;
+}
+
+.contact-shop__list-item:nth-child(1),
+.contact-shop__list-item:nth-child(3) {
+  flex: 1;
+}
+
+.contact-shop__list-item .img1 {
+  position: absolute;
+  top: 50px;
+  right: 85px;
+}
+
+.contact-shop__list-item .img2 {
+  position: absolute;
+  top: 290px;
+  right: 278px;
+}
+
+.contact-shop__list-item .img3 {
+  position: absolute;
+  top: 454px;
+  right: 29px;
+}
+
+.contact-shop__list-item .img4 {
+  position: absolute;
+  top: 70px;
+  right: 127px;
+}
+
+.contact-shop__list-item .img5 {
+  position: absolute;
+  top: 405px;
+  right: 28px;
+}
+
+.contact-shop-text {
+  @include flex-center-both();
+  flex-direction: column;
+
+  & p {
+    width: 165.47px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $text-black;
+  }
+
+  & h3 {
+    width: 380px;
+    margin-top: 20px;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: center;
+    color: $text-black;
+  }
+
+  & a {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 41px;
+    border: 1px solid #d1ceca;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 30px;
+    color: $text-black;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-shop {
+    height: auto;
+  }
+
+  .contact-shop__list {
+    flex-direction: column;
+    width: 100%;
+    height: 679px;
+  }
+
+  .contact-shop__list-item {
+    & .img1,
+    & .img2,
+    & .img3,
+    & .img4,
+    & .img5 {
+      width: 109.19px;
+      height: 109.19px;
+    }
+  }
+
+  .contact-shop__list-item:nth-child(2) {
+    @include flex-center-both();
+    width: auto;
+    height: auto;
+  }
+
+  .contact-shop__list-item:nth-child(1),
+  .contact-shop__list-item:nth-child(3) {
+    flex: 1;
+  }
+
+  .contact-shop__list-item .img1 {
+    position: absolute;
+    top: 30px;
+    left: 113.41px;
+  }
+
+  .contact-shop__list-item .img2 {
+    position: absolute;
+    top: 95px;
+    left: 15px;
+  }
+
+  .contact-shop__list-item .img3 {
+    position: absolute;
+    top: 103px;
+    left: 265px;
+  }
+
+  .contact-shop__list-item .img4 {
+    position: absolute;
+    top: 38px;
+    left: 40px;
+  }
+
+  .contact-shop__list-item .img5 {
+    position: absolute;
+    top: 27px;
+    left: 237px;
+  }
+
+  .contact-shop-text {
+    @include flex-center-both();
+    flex-direction: column;
+
+    & p {
+      width: auto;
+      margin-top: 24px;
+    }
+
+    & h3 {
+      width: auto;
+    }
+
+    & a {
+      margin-top: 24px;
+    }
+  }
+}
+
+// End Contact Shop
