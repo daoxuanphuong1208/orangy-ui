@@ -233,6 +233,10 @@ a {
   gap: 30px 10px;
 }
 
+.product-grid-tabs__bottom-list:not(.active) {
+  display: none;
+}
+
 .sales-container {
   position: absolute;
   top: 12px;
