@@ -1192,3 +1192,140 @@ a {
 }
 
 // End Contact Shop
+
+// Begin Footer
+.footer {
+  height: 306px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__text {
+  margin-top: 50px;
+}
+
+.footer__text-heading {
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 42px;
+  text-align: center;
+  color: $text-white;
+}
+
+.footer__text-description {
+  margin-top: 8px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: $text-white;
+}
+
+.footer__input {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  padding: 14px 17px;
+  background-color: #fff;
+  border: 1px solid #f6f2ee;
+
+  & input {
+    flex-grow: 1;
+    padding-right: 6px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+}
+
+.footer__input-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: center;
+  gap: 0 16px;
+  padding: 20px 0;
+}
+
+.footer__social-list-item {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+
+  & svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.footer__text-copyright {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 24px;
+  color: #ffffffcc;
+
+  & a {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    height: auto;
+    justify-content: start;
+    padding: 0 15px;
+  }
+
+  .footer__text {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .footer__text-heading {
+    font-size: 2.4rem;
+    line-height: 33px;
+    text-align: left;
+  }
+
+  .footer__text-description {
+    text-align: left;
+  }
+
+  .footer__input {
+    & input {
+      flex-grow: 1;
+      padding-right: 6px;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+    }
+  }
+
+  .footer__input-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .footer__social-list {
+    justify-content: start;
+    gap: 0 16px;
+    padding: 24px 0;
+  }
+
+  .footer__text-copyright {
+    padding-bottom: 10px;
+    text-align: left;
+  }
+}
+
+// End Footer
