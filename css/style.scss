@@ -23,6 +23,7 @@ $background-white: #fff;
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -254,6 +255,7 @@ a {
   gap: 40px;
   align-items: center;
 }
+
 .product-grid-tabs__top-list-item {
   height: 28px;
   font-size: 1.6rem;
@@ -274,6 +276,10 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px 10px;
+}
+
+.product-grid-tabs__bottom-list:not(.active) {
+  display: none;
 }
 
 .sales-container {
@@ -378,7 +384,7 @@ a {
 @media (max-width: 1920px) {
   .product-grid-tabs__bottom-list-item-wrap-img {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 
   .product-grid-tabs__bottom-list-item.item1
