@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
     breakpoints: {
       1440: {
         perPage: 3,
-        padding: { left: "15px" },
       },
 
       1024: {
