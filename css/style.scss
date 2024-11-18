@@ -1000,6 +1000,7 @@ a {
 }
 
 .our-service__list-item {
+  width: 307.5px;
   display: flex;
   flex-direction: column;
 
@@ -1118,13 +1119,13 @@ a {
 .contact-shop__list-item .img4 {
   position: absolute;
   top: 70px;
-  right: 127px;
+  left: 127px;
 }
 
 .contact-shop__list-item .img5 {
   position: absolute;
   top: 405px;
-  right: 28px;
+  left: 28px;
 }
 
 .contact-shop-text {
@@ -1299,25 +1300,21 @@ a {
 .footer__input-icon {
   width: 20px;
   height: 20px;
+  padding-right: 31px;
   cursor: pointer;
 }
 
 .footer__social-list {
   display: flex;
   justify-content: center;
-  gap: 0 16px;
+  align-items: center;
+  height: 72px;
+  gap: 0 22px;
   padding: 20px 0;
 }
 
 .footer__social-list-item {
-  width: 24px;
-  height: 24px;
   cursor: pointer;
-
-  & svg {
-    width: 100%;
-    height: 100%;
-  }
 }
 
 .footer__text-copyright {
