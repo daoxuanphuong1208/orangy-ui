@@ -138,27 +138,35 @@ a {
   font-weight: 400;
 }
 .hero-banner__text p {
+  margin-left: 21px;
   width: 290px;
   font-size: 1.8rem;
   line-height: 30px;
   text-align: center;
   color: #fff;
 }
-.hero-banner__text div {
-  height: 36px;
-  padding-top: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid #fff;
-}
 .hero-banner__text button {
+  margin-top: 8px;
+  position: relative;
+}
+.hero-banner__text button a {
+  font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
+  font-weight: 500;
   line-height: 24px;
-  font-weight: 400;
   text-transform: uppercase;
   color: #fff;
   cursor: pointer;
+}
+.hero-banner__text button::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 111px;
+  height: 1px;
+  bottom: -3px;
+  left: 0;
+  background-color: #fff;
 }
 
 @media (max-width: 1440px) {
@@ -268,9 +276,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 104px;
+  width: 101px;
   height: 24px;
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   font-weight: 700;
   line-height: 18px;
   color: #fff;
@@ -280,9 +288,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
+  width: 49px;
   height: 24px;
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   font-weight: 700;
   line-height: 18px;
   color: #fff;
@@ -333,7 +341,7 @@ a {
 .product-grid-tabs__bottom-list-item-text span:nth-child(2) {
   font-size: 1.6rem;
   font-weight: 500;
-  line-height: 25.88px;
+  line-height: 26px;
   color: #000;
 }
 .product-grid-tabs__bottom-list-item-text span:nth-child(3) {
@@ -342,7 +350,7 @@ a {
   gap: 8px;
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 22.5px;
+  line-height: 25px;
   color: #000;
 }
 .product-grid-tabs__bottom-list-item-text span:nth-child(3) span:nth-child(1) {
@@ -355,6 +363,7 @@ a {
   font-size: inherit;
   font-weight: inherit;
   line-height: inherit;
+  text-decoration: line-through;
   color: #666666;
 }
 
@@ -516,7 +525,7 @@ a {
   align-items: center;
 }
 .sale-block__list-item.item2 .title {
-  margin-top: 32px;
+  margin-top: 31.87px;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 24px;
@@ -525,7 +534,7 @@ a {
   text-align: center;
 }
 .sale-block__list-item.item2 .content {
-  margin-top: 122px;
+  margin-top: 115px;
   width: 238.5px;
   height: 220px;
 }
@@ -592,7 +601,10 @@ a {
 .product-slider .splide__list {
   margin-top: 50px !important;
   display: flex;
-  gap: 8px;
+  gap: 10px;
+}
+.product-slider .splide__list .splide__slide {
+  width: 345px !important;
 }
 
 .product-slider__heading {
@@ -659,6 +671,11 @@ a {
 }
 
 .inspiration__heading {
+  display: flex;
+  justify-content: center;
+}
+.inspiration__heading h1 {
+  width: 550px;
   font-size: 3.6rem;
   font-weight: 400;
   line-height: 48px;
@@ -676,9 +693,10 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 291px;
 }
 .inspiration__list-item h3 {
-  margin-top: 1.6rem;
+  margin-top: 16px;
   font-size: 24px;
   font-weight: 400;
   line-height: 38px;
@@ -717,15 +735,6 @@ a {
 .inspiration__list-item-img img {
   width: 100%;
   height: 100%;
-}
-.inspiration__list-item-img::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0.6;
 }
 
 @media (max-width: 992px) {
@@ -786,6 +795,15 @@ a {
 .single-banner img {
   width: 100%;
   height: 100%;
+}
+.single-banner::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6;
 }
 
 .single-banner__text {

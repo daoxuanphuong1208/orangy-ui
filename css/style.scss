@@ -170,6 +170,7 @@ a {
   }
 
   & p {
+    margin-left: 21px;
     width: 290px;
     font-size: 1.8rem;
     line-height: 30px;
@@ -177,22 +178,32 @@ a {
     color: $text-white;
   }
 
-  & div {
-    height: 36px;
-    padding-top: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid #fff;
-  }
 
   & button {
+    margin-top: 8px;
+    position: relative;
+    
+    & a {
+    font-family: $font-family-main;
     font-size: 1.6rem;
+    font-weight: 500;
     line-height: 24px;
-    font-weight: 400;
     text-transform: uppercase;
     color: $text-white;
     cursor: pointer;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 111px;
+      height: 1px;
+      bottom: -3px;
+      left: 0;
+      background-color: #fff;
+
+    }
   }
 }
 
@@ -310,9 +321,9 @@ a {
 .sales-fast {
   & div:nth-child(1) {
     @include flex-center-both();
-    width: 104px;
+    width: 101px;
     height: 24px;
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     font-weight: 700;
     line-height: 18px;
     color: $text-white;
@@ -321,9 +332,9 @@ a {
 
   & div:nth-child(2) {
     @include flex-center-both();
-    width: 50px;
+    width: 49px;
     height: 24px;
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     font-weight: 700;
     line-height: 18px;
     color: $text-white;
@@ -377,7 +388,7 @@ a {
   & span:nth-child(2) {
     font-size: 1.6rem;
     font-weight: 500;
-    line-height: 25.88px;
+    line-height: 26px;
     color: $text-black;
   }
 
@@ -387,7 +398,7 @@ a {
     gap: 8px;
     font-size: 1.6rem;
     font-weight: 400;
-    line-height: 22.5px;
+    line-height: 25px;
     color: $text-black;
 
     & span:nth-child(1) {
@@ -401,6 +412,7 @@ a {
       font-size: inherit;
       font-weight: inherit;
       line-height: inherit;
+      text-decoration: line-through;
       color: #666666;
     }
   }
@@ -593,7 +605,7 @@ a {
   align-items: center;
 
   & .title {
-    margin-top: 32px;
+    margin-top: 31.87px;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 24px;
@@ -603,7 +615,7 @@ a {
   }
 
   & .content {
-    margin-top: 122px;
+    margin-top: 115px;
     width: 238.5px;
     height: 220px;
 
@@ -687,8 +699,14 @@ a {
   & .splide__list {
     margin-top: 50px !important;
     display: flex;
-    gap: 8px;
+    gap: 10px;
+
+    & .splide__slide {
+      width: 345px !important;
+    }
   }
+
+ 
 }
 
 .product-slider__heading {
@@ -764,10 +782,16 @@ a {
 }
 
 .inspiration__heading {
-  font-size: 3.6rem;
-  font-weight: 400;
-  line-height: 48px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  
+  & h1 {
+    width: 550px;
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
+  }
 }
 
 .inspiration__list {
@@ -781,9 +805,11 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 291px;
+
 
   & h3 {
-    margin-top: 1.6rem;
+    margin-top: 16px;
     font-size: 24px;
     font-weight: 400;
     line-height: 38px;
@@ -825,16 +851,6 @@ a {
   & img {
     width: 100%;
     height: 100%;
-  }
-
-  &::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    opacity: 0.6;
   }
 }
 
@@ -910,6 +926,16 @@ a {
   & img {
     width: 100%;
     height: 100%;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
   }
 }
 
