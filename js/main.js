@@ -35,28 +35,29 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   }).mount();
 
-  document
-    .querySelectorAll(".product-grid-tabs__top-list-item")
-    .forEach((tab) => {
-      tab.addEventListener("click", function () {
-        document
-          .querySelectorAll(".product-grid-tabs__top-list-item")
-          .forEach((item) => {
-            item.classList.remove("active");
-          });
-        document
-          .querySelectorAll(".product-grid-tabs__bottom-list")
-          .forEach((content) => {
-            content.classList.remove("active");
-          });
+  // document
+  //   .querySelectorAll(".product-grid-tabs__top-list-item")
+  //   .forEach((tab) => {
+  //     tab.addEventListener("click", function () {
+  //       document
+  //         .querySelectorAll(".product-grid-tabs__top-list-item")
+  //         .forEach((item) => {
+  //           item.classList.remove("active");
+  //         });
 
-        this.classList.add("active");
-        const tabContent = document.querySelector(
-          `.product-grid-tabs__bottom-list.${this.dataset.tab}`
-        );
-        if (tabContent) {
-          tabContent.classList.add("active");
-        }
-      });
-    });
+  //       document
+  //         .querySelectorAll(".product-grid-tabs__bottom-list")
+  //         .forEach((content) => {
+  //           content.classList.remove("active");
+  //         });
+
+  //       this.classList.add("active");
+  //       const tabContent = document.querySelector(
+  //         `.product-grid-tabs__bottom-list.${this.dataset.tab}`
+  //       );
+  //       if (tabContent) {
+  //         tabContent.classList.add("active");
+  //       }
+  //     });
+  //   });
 });
