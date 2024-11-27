@@ -1,0 +1,135 @@
+@import "../abstracts/variables.scss";
+@import "../abstracts/mixin.scss";
+
+// Begin Footer
+.footer {
+  height: 306px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__text {
+  margin-top: 50px;
+}
+
+.footer__text-heading {
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 42px;
+  text-align: center;
+  color: $text-white;
+}
+
+.footer__text-description {
+  margin-top: 8px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: $text-white;
+}
+
+.footer__input {
+  width: 465px;
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  background-color: #fff;
+  border: 1px solid #f6f2ee;
+
+  & input {
+    flex-grow: 1;
+    padding: 14px 17px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+}
+
+.footer__input-icon {
+  width: 20px;
+  height: 20px;
+  padding-right: 31px;
+  cursor: pointer;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+  gap: 0 16px;
+  padding: 20px 0;
+}
+
+.footer__social-list-item {
+  cursor: pointer;
+}
+
+.footer__text-copyright {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 24px;
+  color: #ffffffcc;
+
+  & a {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    height: auto;
+    justify-content: start;
+    padding: 0 15px;
+  }
+
+  .footer__text {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .footer__text-heading {
+    font-size: 2.4rem;
+    line-height: 33px;
+    text-align: left;
+  }
+
+  .footer__text-description {
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .footer__input {
+    width: 100%;
+    & input {
+      flex-grow: 1;
+      padding-right: 6px;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+    }
+  }
+
+  .footer__input-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .footer__social-list {
+    justify-content: start;
+  }
+
+  .footer__text-copyright {
+    padding-bottom: 10px;
+    text-align: left;
+  }
+}
+
+// End Footer

@@ -1,0 +1,223 @@
+@import "../abstracts/variables.scss";
+@import "../abstracts/mixin.scss";
+
+// Begin Contact Shop
+
+.contact-shop__list {
+  display: flex;
+  align-items: center;
+  height: 752px;
+  background-color: #f6f2ee;
+}
+
+.contact-shop__list-item:nth-child(2) {
+  @include flex-center-both();
+}
+
+.contact-shop__list-item:nth-child(1),
+.contact-shop__list-item:nth-child(3) {
+  flex: 1;
+}
+
+.contact-shop__list-item {
+  position: relative;
+  height: 100%;
+  & .img1 {
+    position: absolute;
+    top: 52px;
+    left: 283px;
+  }
+
+  & .img2 {
+    position: absolute;
+    top: 290px;
+    left: 220px;
+  }
+
+  & .img3 {
+    position: absolute;
+    top: 454px;
+    left: 429px;
+  }
+
+  & .img4 {
+    position: absolute;
+    top: 70px;
+    left: 218px;
+  }
+
+  & .img5 {
+    position: absolute;
+    top: 405px;
+    left: 120px;
+  }
+}
+
+.contact-shop-text {
+  @include flex-center-both();
+  flex-direction: column;
+
+  & p {
+    width: 165.47px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $text-black;
+  }
+
+  & h3 {
+    width: 380px;
+    margin-top: 20px;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: center;
+    color: $text-black;
+  }
+
+  & a {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 41px;
+    border: 1px solid #d1ceca;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 30px;
+    color: $text-black;
+  }
+}
+
+@media (max-width: 1919px) {
+  .contact-shop__list-item {
+    & img {
+      width: 200px;
+      height: 200px;
+    }
+
+    & .img1 {
+      position: absolute;
+      top: 10%;
+      left: 10%;
+    }
+
+    & .img2 {
+      position: absolute;
+      top: 29%;
+      left: 50%;
+    }
+
+    & .img3 {
+      position: absolute;
+      top: 56%;
+      left: 28%;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .contact-shop__list {
+    flex-direction: column;
+  }
+
+  .contact-shop__list-item {
+    width: 100%;
+    height: auto;
+    & img {
+      width: 150px;
+      height: 150px;
+    }
+    & .img1 {
+      position: absolute;
+      top: 10%;
+      left: 10%;
+    }
+
+    & .img2 {
+      position: absolute;
+      top: 20%;
+      left: 40%;
+    }
+
+    & .img3 {
+      position: absolute;
+      top: 4%;
+      left: 70%;
+    }
+
+    & .img4 {
+      position: absolute;
+      top: 10%;
+      left: 8%;
+    }
+
+    & .img5 {
+      position: absolute;
+      top: 17%;
+      left: 50%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-shop__list {
+    padding: 0 15px;
+    height: 679.16px;
+  }
+
+  .contact-shop__list-item:nth-child(2) {
+    margin-top: 80px;
+    height: 276px;
+  }
+
+  .contact-shop__list-item {
+    & img {
+      width: 109.19px;
+      height: 109.19px;
+    }
+    & .img1 {
+      top: 30px;
+      left: 98px;
+    }
+
+    & .img2 {
+      top: 95px;
+      left: 0;
+    }
+
+    & .img3 {
+      top: 103px;
+      left: 250px;
+    }
+
+    & .img4 {
+      top: 38px;
+      left: 25px;
+    }
+
+    & .img5 {
+      top: 27px;
+      left: 222px;
+    }
+  }
+
+  .contact-shop-text {
+    & p {
+      width: 205px;
+    }
+
+    & h3 {
+      margin-top: 12px;
+      width: 296.34px;
+    }
+
+    & a {
+      margin-top: 24px;
+    }
+  }
+}
+
+// End Contact Shop

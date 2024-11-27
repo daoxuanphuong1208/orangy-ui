@@ -1,0 +1,146 @@
+@import "../abstracts/variables.scss";
+@import "../abstracts/mixin.scss";
+
+// Begin Inspiration
+.inspiration {
+  width: 1410px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.inspiration__heading {
+  display: flex;
+  justify-content: center;
+
+  & h1 {
+    width: 550px;
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
+  }
+}
+
+.inspiration__list {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 0 82px;
+}
+
+.inspiration__list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 291px;
+
+  & h3 {
+    margin-top: 16px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38px;
+    text-align: left;
+    color: $text-black;
+  }
+
+  & p {
+    margin-top: 8px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: $text-black;
+  }
+}
+
+.inspiration__list-item.item1 > .inspiration__list-item-img {
+  width: 291px;
+  height: 421.44px;
+}
+
+.inspiration__list-item.item2 > .inspiration__list-item-img {
+  width: 291px;
+  height: 215.86px;
+}
+
+.inspiration__list-item.item3 > .inspiration__list-item-img {
+  width: 291px;
+  height: 420.72px;
+}
+
+.inspiration__list-item.item4 > .inspiration__list-item-img {
+  width: 291px;
+  height: 216.23px;
+}
+
+.inspiration__list-item-img {
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .inspiration__list {
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 480px) {
+  .inspiration {
+    padding: 0 15px;
+  }
+
+  .inspiration__heading h1 {
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 38.4px;
+  }
+
+  .inspiration__list {
+    margin-top: 50px;
+    gap: 0 24px;
+    overflow: scroll;
+  }
+
+  .inspiration__list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 265.19px;
+
+    & h3 {
+      margin-top: 20px;
+      font-size: 2rem;
+      line-height: 30.4px;
+    }
+
+    & p {
+      margin-top: 4px;
+      font-size: 1.4rem;
+      line-height: 24px;
+      text-align: left;
+    }
+  }
+
+  .inspiration__list-item.item1 > .inspiration__list-item-img {
+    width: 100%;
+    height: 384.14px;
+  }
+
+  .inspiration__list-item.item2 > .inspiration__list-item-img {
+    width: 100%;
+    height: 196.78px;
+  }
+
+  .inspiration__list-item.item3 > .inspiration__list-item-img {
+    width: 100%;
+    height: 384.14px;
+  }
+
+  .inspiration__list-item.item4 > .inspiration__list-item-img {
+    width: 100%;
+    height: 196.78px;
+  }
+}
+// End Inspiration

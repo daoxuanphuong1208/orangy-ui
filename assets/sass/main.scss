@@ -1,0 +1,27 @@
+@import url("../splide-4.1.3/dist/css/splide.min.css");
+@import "./base/reset.scss";
+@import "./abstracts/variables.scss";
+@import "./abstracts/mixin.scss";
+@import "./layout/header.scss";
+@import "./layout/hero_banner.scss";
+@import "./layout/product_grid_tabs.scss";
+@import "./layout/text_carousel.scss";
+@import "./layout/sale_block.scss";
+@import "./layout/product_slider.scss";
+@import "./layout/inspiration.scss";
+@import "./layout/single_banner.scss";
+@import "./layout/our_service.scss";
+@import "./layout/contact_shop.scss";
+@import "./layout/footer.scss";
+
+.container-fluid {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-fluid-2 {
+  max-width: 1410px;
+  width: 100%;
+  margin: 0 auto;
+}

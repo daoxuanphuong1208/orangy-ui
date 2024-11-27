@@ -1,0 +1,17 @@
+$font-family-main: "Poppins", sans-serif;
+$font-family-heading: "Lora", serif;
+$text-white: #fff;
+$text-black: #000;
+$text-gray: rgba(0, 0, 0, 0.6);
+$background-black: #000;
+$background-white: #fff;
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/Lora/Lora-VariableFont_wght.ttf") format("truetype");
+}
