@@ -1628,6 +1628,10 @@ a {
   height: 20px !important;
 }
 
+.notification-wrap {
+  display: none;
+}
+
 .notification-popup {
   display: flex;
   justify-content: center;
