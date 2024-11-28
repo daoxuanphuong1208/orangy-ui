@@ -1937,6 +1937,17 @@ a {
   color: #000;
 }
 
+@media (max-width: 768px) {
+  .cookie-bar {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .cookie-bar p {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 36px;
+  }
+}
 .app {
   position: relative;
 }

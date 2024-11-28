@@ -45,3 +45,16 @@
     color: $text-black;
   }
 }
+
+@media (max-width: 768px) {
+  .cookie-bar {
+    flex-direction: column;
+    gap: 20px;
+
+    & p {
+      text-align: center;
+      font-size: 1.8rem;
+      line-height: 36px;
+    }
+  }
+}
