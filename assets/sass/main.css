@@ -1860,6 +1860,28 @@ a {
   display: block;
 }
 
+@media (max-width: 1440px) {
+  .faqs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 27.2px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .faqs h1 {
+    width: 198px;
+    font-size: 2.8rem;
+    line-height: 38.4px;
+  }
+  .faqs__list {
+    margin-top: 30px;
+  }
+  .faqs__list-item-header h3 {
+    font-size: 2rem;
+  }
+}
 .app {
   position: relative;
 }
