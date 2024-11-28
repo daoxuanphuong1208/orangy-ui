@@ -1464,6 +1464,24 @@ a {
   font-family: "Lora";
   src: url("../fonts/Lora/Lora-VariableFont_wght.ttf") format("truetype");
 }
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #ededed;
+}
+.close-btn img {
+  width: 20px !important;
+  height: 20px !important;
+}
+
 .sales-wrap {
   display: none;
 }
@@ -1512,24 +1530,6 @@ a {
   color: #000;
 }
 
-.sales-popup__close {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  cursor: pointer;
-  border: 1px solid #ededed;
-}
-.sales-popup__close img {
-  width: 20px;
-  height: 20px;
-}
-
 @media (max-width: 992px) {
   .sales-popup {
     flex-direction: column;
@@ -1537,7 +1537,6 @@ a {
     width: 100%;
     padding: 0 15px;
     height: 420px;
-    top: 131px;
   }
   .sales-popup img {
     width: 100%;
@@ -1556,14 +1555,14 @@ a {
   .sales-popup__text p {
     margin-top: 15px;
   }
-  .sales-popup__close {
+  .close-btn {
     top: 12px;
     right: 23px;
     width: 32px;
     height: 32px;
     background-color: #fff;
   }
-  .sales-popup__close img {
+  .close-btn img {
     width: 20px;
     height: 20px;
   }
@@ -1591,16 +1590,75 @@ a {
   .sales-popup__text p {
     margin-top: 15px;
   }
-  .sales-popup__close {
+  .close-btn {
     top: 12px;
     right: 8px;
     width: 32px;
     height: 32px;
     background-color: #fff;
   }
-  .sales-popup__close img {
+  .close-btn img {
     width: 20px;
     height: 20px;
+  }
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/Lora/Lora-VariableFont_wght.ttf") format("truetype");
+}
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #ededed;
+}
+.close-btn img {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.notification-wrap {
+  display: none;
+}
+
+.notification-popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 799.01px;
+  height: 192px;
+  top: 50%;
+  left: 50%;
+  z-index: 99;
+  background-color: #fff;
+  animation: popupFadeIn 0.5s ease-out forwards;
+}
+.notification-popup h1 {
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 56px;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .notification-popup {
+    width: 80%;
+    height: 150px;
+  }
+  .notification-popup h1 {
+    font-size: 2.4rem;
   }
 }
 .app {

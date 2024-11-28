@@ -1,0 +1,17 @@
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #ededed;
+  & img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
