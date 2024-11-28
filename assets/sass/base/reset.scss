@@ -27,6 +27,10 @@ h6 {
   font-family: $font-family-heading;
 }
 
+button {
+  cursor: pointer;
+}
+
 button,
 input {
   border: none;

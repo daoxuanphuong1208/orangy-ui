@@ -1,0 +1,47 @@
+@import "../abstracts/variables.scss";
+@import "../abstracts/mixin.scss";
+
+.cookie-bar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 20px;
+  z-index: 100;
+  display: flex;
+  opacity: 0.9;
+  background-color: $background-white;
+
+  & p {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 56px;
+  }
+}
+
+.cookie-bar__action {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  & button {
+    @include flex-center-both();
+    padding: 5px 20px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  & button:nth-child(1) {
+    background-color: $background-black;
+    color: $text-white;
+  }
+
+  & button:nth-child(2) {
+    color: $text-black;
+  }
+}
