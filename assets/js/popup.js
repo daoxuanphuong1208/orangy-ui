@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const popup = document.querySelector(".sales-wrap");
   const overlay = document.querySelector(".orangy-overlay");
-  const closeBtn = document.querySelector(".sales-popup__close");
+  const closeBtn = document.querySelector(".close-btn");
   const HIDE_POPUP_KEY = "hidePopup";
 
   let mouseOrTouchDetected = false;
