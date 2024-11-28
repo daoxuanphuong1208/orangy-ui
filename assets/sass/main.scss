@@ -32,6 +32,7 @@
 }
 
 .orangy-overlay {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -56,11 +57,11 @@
 
 @keyframes popupFadeIn {
   0% {
-    transform: translateX(-50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
     opacity: 0;
   }
   100% {
-    transform: translateX(-50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
     opacity: 1;
   }
 }

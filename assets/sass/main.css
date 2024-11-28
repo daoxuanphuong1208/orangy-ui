@@ -1464,12 +1464,16 @@ a {
   font-family: "Lora";
   src: url("../fonts/Lora/Lora-VariableFont_wght.ttf") format("truetype");
 }
+.sales-wrap {
+  display: none;
+}
+
 .sales-popup {
   display: flex;
-  position: absolute;
+  position: fixed;
   width: 880px;
   height: 396px;
-  top: 381px;
+  top: 50%;
   left: 50%;
   z-index: 99;
   animation: popupFadeIn 0.5s ease-out forwards;
@@ -1568,7 +1572,6 @@ a {
   .sales-popup {
     width: 300px;
     height: 420px;
-    top: 131px;
     padding: 0;
   }
   .sales-popup img {
@@ -1617,6 +1620,7 @@ a {
 }
 
 .orangy-overlay {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -1640,11 +1644,11 @@ a {
 }
 @keyframes popupFadeIn {
   0% {
-    transform: translateX(-50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
     opacity: 0;
   }
   100% {
-    transform: translateX(-50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
     opacity: 1;
   }
 }
