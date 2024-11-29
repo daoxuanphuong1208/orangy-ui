@@ -86,8 +86,8 @@
   .close-btn {
     top: 12px;
     right: 23px;
-    width: 32px;
-    height: 32px;
+    width: 32px !important;
+    height: 32px !important;
     background-color: $background-white;
     & img {
       width: 20px;

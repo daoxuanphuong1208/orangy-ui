@@ -1374,6 +1374,12 @@ a {
   background-color: #fff;
   border: 1px solid #f6f2ee;
 }
+.footer__input button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 15px;
+}
 .footer__input input {
   flex-grow: 1;
   padding: 14px 17px;
@@ -1560,8 +1566,8 @@ a {
   .close-btn {
     top: 12px;
     right: 23px;
-    width: 32px;
-    height: 32px;
+    width: 32px !important;
+    height: 32px !important;
     background-color: #fff;
   }
   .close-btn img {
@@ -1644,6 +1650,7 @@ a {
   top: 50%;
   left: 50%;
   z-index: 99;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-color: #fff;
   animation: popupFadeIn 0.5s ease-out forwards;
 }
@@ -1672,7 +1679,6 @@ a {
   src: url("../fonts/Lora/Lora-VariableFont_wght.ttf") format("truetype");
 }
 .contact-form-wrap {
-  height: 852px;
   margin-bottom: 100px;
   background-color: #f6f3ee;
 }
@@ -1689,6 +1695,9 @@ a {
   font-weight: 400;
   line-height: 48px;
   text-align: center;
+}
+.contact-form .g-recaptcha {
+  margin-top: 20px;
 }
 
 .contact-form__form {
@@ -1716,6 +1725,7 @@ a {
 }
 .contact-form__form p {
   margin-top: 20px;
+  padding-bottom: 20px;
   font-size: 1.6rem;
   line-height: 24px;
 }
@@ -1768,7 +1778,6 @@ a {
 }
 @media (max-width: 992px) {
   .contact-form-wrap {
-    height: 988px;
     margin-bottom: 48px;
   }
   .contact-form {
@@ -1848,20 +1857,24 @@ a {
   line-height: 38px;
   text-align: left;
 }
+.faqs__list-item-header img {
+  transition: transform 0.3s ease;
+}
 
 .faqs__list-item.active .faqs__list-item-header {
   border-bottom: 1px solid #000;
 }
 
 .faqs__list-item-content {
-  display: none;
+  overflow: hidden;
+  max-height: 0;
   margin-top: 16px;
-  font-family: Poppins;
   font-size: 1.6rem;
+  transition: max-height 0.3s ease-in-out;
 }
 
 .faqs__list-item.active .faqs__list-item-content {
-  display: block;
+  max-height: 500px;
 }
 
 @media (max-width: 1440px) {
@@ -1896,7 +1909,7 @@ a {
 }
 .cookie-bar {
   position: fixed;
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   bottom: 0;
@@ -1904,7 +1917,7 @@ a {
   right: 0;
   padding: 10px 20px;
   z-index: 100;
-  display: flex;
+  display: none;
   opacity: 0.9;
   background-color: #fff;
 }
@@ -1912,6 +1925,10 @@ a {
   font-size: 2rem;
   font-weight: 400;
   line-height: 56px;
+}
+
+.cookie-bar.active {
+  display: flex;
 }
 
 .cookie-bar__action {

@@ -38,6 +38,13 @@
   background-color: #fff;
   border: 1px solid #f6f2ee;
 
+  & button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 15px;
+  }
+
   & input {
     flex-grow: 1;
     padding: 14px 17px;

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./assets/sass/main.css" />
     <script src="./assets/splide-4.1.3/dist/js/splide.min.js"></script>
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>Orangy shop</title>
   </head>
   <body>
@@ -201,16 +202,17 @@
           <div class="container-fluid-2">
             <section class="contact-form">
               <h2>Contact us to order and <br />receive purchase advice</h2>
-              <form id="contact-form" class="contact-form__form" action="">
+              <form class="contact-form__form" action="">
                 <div class="contact-form__form-list">
                   <div class="contact-form__form-item">
-                    <label for="contact-form-name">Name*</label>
+                    <label for="contact-form-name">Name *</label>
                     <input
                       name="contact-form-name"
                       id="contact-form-name"
                       type="text"
                       placeholder="Name"
                     />
+                    <span class="error-message" id="name-error"></span>
                   </div>
                   <div class="contact-form__form-item">
                     <label for="contact-form-email">Email *</label>
@@ -220,6 +222,7 @@
                       type="email"
                       placeholder="Email"
                     />
+                    <span class="error-message" id="email-error"></span>
                   </div>
                   <div class="contact-form__form-item">
                     <label for="contact-form-phone">Phone *</label>
@@ -229,9 +232,10 @@
                       type="text"
                       placeholder="Phone"
                     />
+                    <span class="error-message" id="phone-error"></span>
                   </div>
                   <div class="contact-form__form-item">
-                    <label for="contact-form-address">Address *</label>
+                    <label for="contact-form-address">Address</label>
                     <input
                       name="contact-form-address"
                       id="contact-form-address"
@@ -248,7 +252,12 @@
                     ></textarea>
                   </div>
                 </div>
-                <button>Submit now</button>
+                <div
+                  class="g-recaptcha"
+                  data-sitekey="6LfkiYwqAAAAAJMD6Pxc6cNFiiCDUHAPAjRa8nkn"
+                ></div>
+                <span class="error-message" id="recaptcha-error"></span>
+                <button type="submit">Submit now</button>
                 <p>* Required</p>
               </form>
             </section>
@@ -506,9 +515,9 @@
             </p>
             <div class="footer__input">
               <input type="email" placeholder="Email" />
-              <div class="footer__input-icon">
+              <button type="submit" class="footer__input-icon">
                 <img src="./assets/images/footer/arrow_right.svg" alt="" />
-              </div>
+              </button>
             </div>
             <ul class="footer__social-list">
               <li class="footer__social-list-item">
@@ -556,7 +565,7 @@
       </div>
       <div class="container-fluid">
         <div class="notification-wrap">
-          <section class="notification-popup">
+          <section id="notification-popup" class="notification-popup">
             <h1>Thank you! <br />Data has been sent successfully.</h1>
             <div class="close-btn">
               <img
@@ -574,14 +583,18 @@
             our website.
           </p>
           <div class="cookie-bar__action">
-            <button>Accept</button>
-            <button>Ignore</button>
+            <button class="cookie-bar__action-accepted">Accept</button>
+            <button class="cookie-bar__action-ignored">Ignore</button>
           </div>
         </section>
       </div>
     </div>
     <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/popup.js"></script>
+    <script src="./assets/js/sales_popup.js"></script>
     <script src="./assets/js/product_grid_tabs.js"></script>
+    <script src="./assets/js/contact_form.js"></script>
+    <script src="./assets/js/faqs.js"></script>
+    <script src="./assets/js/cookie_bar.js"></script>
+    <script src="./assets/js/newsletter_form.js"></script>
   </body>
 </html>

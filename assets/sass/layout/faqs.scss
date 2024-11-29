@@ -42,6 +42,10 @@
     line-height: 38px;
     text-align: left;
   }
+
+  & img {
+    transition: transform 0.3s ease;
+  }
 }
 
 .faqs__list-item.active .faqs__list-item-header {
@@ -49,14 +53,15 @@
 }
 
 .faqs__list-item-content {
-  display: none;
+  overflow: hidden;
+  max-height: 0;
   margin-top: 16px;
-  font-family: Poppins;
   font-size: 1.6rem;
+  transition: max-height 0.3s ease-in-out;
 }
 
 .faqs__list-item.active .faqs__list-item-content {
-  display: block;
+  max-height: 500px;
 }
 
 @media (max-width: 1440px) {
