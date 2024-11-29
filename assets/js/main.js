@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  AOS.init();
   new Splide("#header-slider", {
     perPage: 2,
     autoplay: false,

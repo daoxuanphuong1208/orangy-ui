@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const email = emailInput.value.trim();
 
     if (!isValidEmail(email)) {
-      alert("Invalid email format. Please check and try again.");
+      showPopup("Invalid email format. Please check and try again.");
       return;
     }
 

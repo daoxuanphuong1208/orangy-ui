@@ -126,6 +126,9 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
+    const captcha = document.querySelector(".g-recaptcha");
+    captcha.style.display = "block";
+
     const recaptchaResponse = grecaptcha.getResponse();
     const recaptchaErrorMessage = document.querySelector("#recaptcha-error");
     if (!recaptchaResponse) {
@@ -134,6 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     } else {
       recaptchaErrorMessage.textContent = "";
+      captcha.style.display = "none";
     }
 
     const formData = {
