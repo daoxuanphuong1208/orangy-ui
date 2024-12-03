@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }).mount();
 
   new Splide("#product-slider", {
+    type: "slide",
     perPage: 4,
     autoplay: false,
     arrows: false,
@@ -27,11 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
       },
 
       1024: {
-        perPage: 2.5,
+        perPage: 2,
       },
       768: {
-        type: "loop",
-        perPage: 1.5,
+        perPage: 1,
       },
     },
   }).mount();
