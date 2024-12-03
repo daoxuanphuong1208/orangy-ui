@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
   AOS.init();
   new Splide("#header-slider", {
+    type: "slide",
     perPage: 2,
     autoplay: false,
     arrows: false,
     pagination: false,
     breakpoints: {
       768: {
-        type: "loop",
         perPage: 1,
         arrows: true,
         interval: 3000,

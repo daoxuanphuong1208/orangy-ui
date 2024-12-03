@@ -92,19 +92,18 @@
 @media (max-width: 480px) {
   .hero-banner {
     height: 600px;
-  }
 
-  .hero-banner__text {
-    height: 248px;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    &__text {
+      height: 248px;
+      top: 175px;
 
-    & p {
-      margin-left: 0;
-    }
+      & p {
+        margin-left: 0;
+      }
 
-    & button {
-      margin-top: 12px;
+      & button {
+        margin-top: 12px;
+      }
     }
   }
 }

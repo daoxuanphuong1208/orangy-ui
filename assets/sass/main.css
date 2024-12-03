@@ -124,6 +124,9 @@ a {
     color: #fff;
     background-color: transparent !important;
   }
+  .header__top .splide__slide:nth-child(2) {
+    justify-content: center;
+  }
   .header__top .splide__arrow--prev {
     left: -14px;
   }
@@ -234,8 +237,7 @@ a {
   }
   .hero-banner__text {
     height: 248px;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 175px;
   }
   .hero-banner__text p {
     margin-left: 0;
@@ -898,6 +900,13 @@ a {
 @media (max-width: 1440px) {
   .inspiration__list {
     overflow: scroll;
+  }
+  .inspiration__heading h1 {
+    width: auto;
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
   }
 }
 @media (max-width: 480px) {

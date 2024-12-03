@@ -317,7 +317,9 @@ function renderTabContent(tabName) {
   const tabData = productGridTabsList.find((item) => item.name === tabName);
   if (!tabData) return;
 
-  let productGridRender = `<ul class="product-grid-tabs__bottom-list ${tabName}">`;
+  let productGridRender = `
+  <div data-aos="zoom-in">
+  <ul class="product-grid-tabs__bottom-list ${tabName}">`;
   productGridRender += tabData.data
     .map(
       (product, index) => `
@@ -357,7 +359,7 @@ function renderTabContent(tabName) {
         </li>`
     )
     .join("");
-  productGridRender += `</ul>`;
+  productGridRender += `</div>`;
 
   productGridTabsBottom.innerHTML = productGridRender;
 }

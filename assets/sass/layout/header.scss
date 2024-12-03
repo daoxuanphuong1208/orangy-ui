@@ -52,14 +52,20 @@
   .header__top {
     height: 40px;
     padding: 8px 20px;
-    .splide__slide {
+
+    & .splide__slide {
       justify-content: center;
     }
 
-    .splide__arrow {
+    & .splide__arrow {
       color: #fff;
       background-color: transparent !important;
     }
+
+    & .splide__slide:nth-child(2) {
+      justify-content: center;
+    }
+
     .splide__arrow--prev {
       left: -14px;
     }
